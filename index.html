@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу | Sara и Tony</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background: #fef9f6;
+            color: #5a4c3e;
+            line-height: 1.6;
+        }
+
+        /* Герой секция с локальным фото */
+        .hero {
+            height: 100vh;
+            background: 
+                linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)),
+                url('wedding-photo.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .date {
+            font-size: 2rem;
+            letter-spacing: 3px;
+            margin-top: 2rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .section {
+            margin: 4rem 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #d4a76a;
+            font-weight: 400;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .timeline-item {
+            flex: 1;
+            min-width: 200px;
+            margin: 1rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .timeline-time {
+            font-size: 1.2rem;
+            color: #d4a76a;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .rsvp-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .contacts {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        /* Стили для кнопок ВК */
+        .vk-button {
+            display: inline-block;
+            background: #4c75a3;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid #4c75a3;
+            margin: 0.5rem;
+        }
+        
+        .vk-button:hover {
+            background: white;
+            color: #4c75a3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .contacts-grid {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            min-width: 250px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+            
+            .timeline {
+                flex-direction: column;
+            }
+            
+            .contacts {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .contacts-grid {
+                flex-direction: column;
+            }
+
+            .hero {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Герой секция -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Sara & Tony</h1>
+            <p>Приглашаем вас разделить с нами радость нашего дня</p>
+            <div class="date">7 ИЮЛЯ 2024</div>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <section class="container">
+        <div class="section">
+            <h2 class="section-title">Наша история</h2>
+            <p>После пяти лет прекрасных моментов, смеха и взаимной поддержки, мы решили связать наши жизни вместе. 
+            Мы будем бесконечно рады, если вы разделите с нами этот особенный день и станете частью нашего счастья.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Детали праздника</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">15:00</div>
+                    <h3>Церемония</h3>
+                    <p>ЗАГС Центральный<br>ул. Цветочная, 15</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">17:00</div>
+                    <h3>Фуршет</h3>
+                    <p>Ресторан "BigCute"<br>Парковая набережная, 8</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">19:00</div>
+                    <h3>Банкет</h3>
+                    <p>Ресторан "BigCute"<br>Торжественный ужин и танцы</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Блок подтверждения через ВК -->
+        <div class="section">
+            <h2 class="section-title">Подтвердите присутствие</h2>
+            <div class="rsvp-form">
+                <div style="text-align: center; padding: 1rem;">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">💌</div>
+                    <h3 style="color: #d4a76a; margin-bottom: 1rem;">Мы будем рады видеть вас!</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.6;">
+                        Пожалуйста, подтвердите ваше присутствие,<br>
+                        написав нам в ВКонтакте до 1 июля 2024 года
+                    </p>
+                    
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+                        <a href="https://vk.com/sara_profile" 
+                           target="_blank"
+                           class="vk-button">
+                            👰 Написать Sara
+                        </a>
+                        <a href="https://vk.com/tony_profile" 
+                           target="_blank"
+                           class="vk-button">
+                            🤵 Написать Tony
+                        </a>
+                    </div>
+                    
+                    <p style="color: #666; font-size: 0.9rem;">
+                        Или позвоните нам: Sara +7 (952) 001-03-21, Tony +7 (952) 001-03-21
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Дресс-код</h2>
+            <p>Мы будем рады, если вы поддержите цветовую гамму нашего праздника:<br>
+            <strong>Для женщин:</strong> пастельные тона, нежные платья<br>
+            <strong>Для мужчин:</strong> светлые костюмы или рубашки</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-grid">
+                <div class="contact-card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">👰</div>
+                    <h3 style="color: #d4a76a; margin-bottom: 1rem;">Невеста Sara</h3>
+                    <p style="margin-bottom: 0.5rem;">+7 (952) 001-03-21</p>
+                    <p style="margin-bottom: 1.5rem;">navruz20032103@email.com</p>
+                    <a href="https://vk.com/20antivirus00" 
+                       target="_blank"
+                       class="vk-button">
+                        💌 Написать в ВК
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🤵</div>
+                    <h3 style="color: #d4a76a; margin-bottom: 1rem;">Жених Tony</h3>
+                    <p style="margin-bottom: 0.5rem;">+7 (952) 001-03-21</p>
+                    <p style="margin-bottom: 1.5rem;">navruz20032103@email.com</p>
+                    <a href="https://vk.com/20antivirus00" 
+                       target="_blank"
+                       class="vk-button">
+                        💌 Написать в ВК
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Мы ждём вас!</h2>
+            <p>Этот день будет особенным, потому что на нём будем вы — самые дорогие и близкие нам люди.</p>
+            <p style="margin-top: 2rem; font-style: italic;">С любовью, Sara и Tony</p>
+        </div>
+    </section>
+
+    <script>
+        // Плавная прокрутка для всех ссылок
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Красивый эффект при наведении на карточки
+        document.querySelectorAll('.contact-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
